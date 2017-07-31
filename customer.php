@@ -85,22 +85,23 @@
             </ul>
           </article>
         </article>
-        <section class="col-xs-12 banner">
-          <article class="col-xs-12 swiper-container">
-            <article class="swiper-wrapper">
-              <article class="swiper-slide" data-swiper-autoplay="4000">
-                Slide 1
-              </article> <!-- Slide 1 -->
-              <article class="swiper-slide" data-swiper-autoplay="4000">
-                Slide 2
-              </article> <!-- Slide 2 -->
-            </article>
-            <article class="swiper-pagination"></article>
-            <article class="swiper-button-prev"></article>
-            <article class="swiper-button-next"></article>
-            <article class="swiper-scrollbar"></article>
-          </article> <!-- swiper-container -->
-        </section>
+        <article class="row">
+          <section class="col-xs-12 banner" style="padding: 0px;">
+            <article class="col-xs-12 swiper-container">
+              <article class="swiper-wrapper">
+                <?php for ($i=1; $i <= 7 ; $i++) { ?>
+                <article class="swiper-slide" data-swiper-autoplay="4000">
+                  <img src="image/banner/0<?php echo $i; ?>.jpg">
+                </article> <!-- Slide 1 -->
+                <?php } ?>
+              </article>
+              <article class="swiper-pagination"></article>
+              <article class="swiper-button-prev"></article>
+              <article class="swiper-button-next"></article>
+              <article class="swiper-scrollbar"></article>
+            </article> <!-- swiper-container -->
+          </section>
+        </article>
       </section>
       <h3 style="font-family: 'Kanit', sans-serif; color: #FFFFFF;">ลูกค้าที่ให้เกียรติกับเรา</h3>
     </section>

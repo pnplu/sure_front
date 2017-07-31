@@ -55,9 +55,10 @@ body {
 
   // wrap_banner
   .wrap_banner {
-    background-color: #ffcc00;
+    // background-color: #ffcc00;
+    // padding: 0px;
     .wrap_btn_ham {
-      padding: 0px;
+      // padding: 0px;
       background-image: url("../../image/bg/bg_menu.jpg");
       background-size: cover;
       height: 50px;
@@ -92,9 +93,17 @@ body {
     }
     // slider
     .swiper-container {
-        height: 300px;
+        height: auto;
         padding: 0px;
         margin: 0px;
+        .swiper-wrapper {
+          width: 100%;
+          .swiper-slide {
+            img {
+              width: 100%;
+            }
+          }
+        }
         .swiper-button-prev, .swiper-button-next {
           filter: grayscale(100%);
         }
@@ -390,6 +399,110 @@ body {
     }
   }
 }
+@media screen and (min-width: 800px) {
+  //wrap_process_buy
+  .wrap_process_buy {
+    background-color: #bea580;
+    height: auto;
+    .wrap_box_pb_l {
+      // background-color: #bea580;
+      padding: 0px;
+      .wrap_box_pb {
+        height: 240px;;
+        .border_img_process {
+          height: auto;
+          margin-top: 10px;
+          img {
+            display: block;
+            float: left;
+          }
+        }
+        .wrap_text_sec_pb {
+          img {
+            display: block;
+            float: left;
+            width: 220px;
+            margin-top: 30px;
+            margin-left: 10px;
+          }
+        }
+        .wrap_text_sec_pb2 {
+          img {
+            display: block;
+            float: left;
+            width: 200px;
+            margin-top: 10px;
+            margin-left: 10px;
+          }
+        }
+        .wrap_text_sec_pb3 {
+          img {
+            display: block;
+            float: left;
+            width: 220px;
+            margin-top: 30px;
+            margin-left: 10px;
+          }
+        }
+        .wrap_text_sec_pb4 {
+          img {
+            display: block;
+            float: left;
+            width: 270px;
+            margin-top: 30px;
+            margin-left: 10px;
+          }
+        }
+        .wrap_text_sec_pb6 {
+          img {
+            display: block;
+            float: left;
+            width: 180px;
+            margin-top: 30px;
+            margin-left: 10px;
+          }
+        }
+        .wrap_img_pb_sec {
+          img {
+            margin-top: 20px;
+            width: 200px;
+          }
+        }
+        .wrap_img_pb_sec2 {
+          img {
+            margin-top: 20px;
+            width: 350px;
+          }
+        }
+        .wrap_img_pb_sec3 {
+          img {
+            margin-top: 20px;
+            width: 150px;
+          }
+        }
+        .wrap_img_pb_sec4 {
+          img {
+            margin-top: 10px;
+            width: 320px;
+          }
+        }
+        .wrap_img_pb_sec5 {
+          img {
+            margin-top: -100px;
+            width: 180px;
+          }
+        }
+        .wrap_img_pb_sec6 {
+          img {
+            margin-top: 20px;
+            margin-right: 10px;
+            width: 160px;
+          }
+        }
+      }
+    }
+  }
+}
 
 @media screen and (min-width: 1100px) {
   .mt_sc {
@@ -463,7 +576,7 @@ body {
     }
     // slider
     .swiper-container {
-        height: 400px;
+        height: auto;
         padding: 0px;
         margin: 0px;
         .swiper-button-prev, .swiper-button-next {
@@ -539,26 +652,38 @@ body {
         .wrap_img_pb_sec {
           img {
             margin-top: 60px;
+            width: 240px;
           }
         }
         .wrap_img_pb_sec2 {
           img {
             margin-top: 60px;
+            width: 350px;
           }
         }
         .wrap_img_pb_sec3 {
           img {
-            margin-top: 40px;
+            margin-top: 0px;
+            width: 180px;
           }
         }
         .wrap_img_pb_sec4 {
           img {
             margin-top: 80px;
+            width: 320px;
           }
         }
         .wrap_img_pb_sec5 {
           img {
             margin-top: 30px;
+            width: 250px;
+          }
+        }
+        .wrap_img_pb_sec6 {
+          img {
+            margin-top: 20px;
+            margin-right: 10px;
+            width: 180px;
           }
         }
       }
